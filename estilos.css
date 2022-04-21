@@ -17,7 +17,7 @@
     padding-bottom: 20px;
 }
 .pantalla_izquierda{
-    background-image: url("tpi/playa.jpg");
+    background-image: url(playa.jpg);
     background-size: cover;
     background-position: center;
     height: 70vh;
