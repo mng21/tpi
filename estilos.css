@@ -61,8 +61,8 @@
 
 .carousel-caption{
     bottom: 140px;
-    padding-left: 400px;
-    
+    padding-left: 300px;
+      
     
 }
 .carousel-caption h5{
@@ -100,7 +100,10 @@
 
 .fondo_header{
         background-color: #333a40;
+        padding-inline-end: 175px;
+        padding-inline-start: 100px;
 }
+
  .fondo__footer{
     background-image: linear-gradient(to right, #1d3947, #1d3b4b, #1d3e4f, #1e4053, #1e4357, #1e455b, #1e485e, #1e4a62, #1e4c66, #1d4e69, #1d506d, #1d5271);
  }
@@ -109,6 +112,8 @@
      background-color: #96c93e;
      border-color: #96c93e;
  }
+
+ 
 
  @media (max-width: 600px) {
 
@@ -128,10 +133,15 @@
    
     .container-fluid {
         flex-direction: column;
+        align-items: center;
     }
 
     .card-body {
         background-color: rgb(247, 225, 192);
+    }
+
+    .footer_1{
+        display: none;
     }
 }
 
