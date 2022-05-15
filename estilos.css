@@ -113,7 +113,17 @@
      border-color: #96c93e;
  }
 
- 
+.form_1{
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.color1{
+    background-color: rgb(139, 217, 248);
+    color: blue;
+    
+}
+
 
  @media (max-width: 600px) {
 
