@@ -42,7 +42,7 @@
                   <a class="nav-link text-white" href="#conviertete en orador">Conviertete en orador</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-success href="#">Comprar tickets</a>
+                  <a class="nav-link text-success" href="#">Comprar tickets</a>
                 </li>
                 
               </ul>
@@ -110,49 +110,48 @@
         <h1>VALOR DE TICKET $200</h1>
         <div class="row form_1">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+              <input type="text"  id="nombre" class="form-control" placeholder="Nombre" aria-label="Nombre">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+              <input type="text" id="apellido" class="form-control" placeholder="Apellido" aria-label="Apellido">
             </div>
           </div>
           <div class="row form_1">
             <div class="col">
                 <br>
-                <input type="email" class="form-control" placeholder="Correo" aria-label="Correo">
+                <input type="email" id="email" class="form-control" placeholder="Correo" aria-label="Correo">
                 <br>
               </div>
               
           </div>
           <div class="row form_1">
             <div class="col text-start">
-                <label for="inputCity" class="form-label">Cantidad</label>
-                <input type="text" class="form-control" id="cantidad">
+                <label for="cantidadTickets" class="form-label">Cantidad</label>
+                <input id="cantidadTickets" type="number" min="1" pattern="^[1-9]+" placeholder="Cantidad" class="form-control">
               </div>
               <div class="col text-start">
-                <label for="inputState" class="form-label">Categoria</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Estudiantes</option>
-                  <option selected>Trainee</option>
-                  <option selected>Junior</option>
+                <label for="categoriaSelect" class="form-label">Categoria</label>
+                <select id="categoriaSelect"  class="form-select">
+                  <option selected value="0">Público General</option>
+                  <option value="1">Estudiantes</option>
+                  <option value="2">Trainee</option>
+                  <option value="3">Junior</option>
                 </select>
                 <br>
               </div>
           </div>
           <div class="row form_1">
-        
-            <div class="col">
-              <input type="text" class="form-control form-control-lg color1" id="colFormLabelLg" placeholder="Total a Pagar: $">
-            <br>
-            </div>
+          <div  id="totalPago" class="col alert alert-primary ancho" role="alert"><p class="text-center">Total a Pagar: $</p>
+              <!--<input type="text" class="form-control form-control-lg color1"  placeholder="Total a Pagar: $">-->
+          </div>
           </div>
           <div class="row form_1">
             
             <div class="d-grid  col-6">
-                <button class="btn btn-primary fondo__boton__enviar" type="button">Borrar</button>
+                <button class="btn btn-primary fondo__boton__enviar" type="reset" id="btnBorrar">Borrar</button>
             </div>
             <div class="d-grid  col-6">
-                <button class="btn btn-primary fondo__boton__enviar" type="button">Resumen</button>
+                <button class="btn btn-primary fondo__boton__enviar" type="button"  id="btnResumen">Resumen</button>
             </div> 
             
           </div>
@@ -181,7 +180,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="principal.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

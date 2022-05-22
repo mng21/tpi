@@ -120,8 +120,12 @@
 
 .color1{
     background-color: rgb(139, 217, 248);
-    color: blue;
     
+}
+
+.ancho{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
